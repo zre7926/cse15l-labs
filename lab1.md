@@ -57,3 +57,33 @@ Hello.java
 * Running ls with a path to a file as an argument resulted in the name of that file being printed out.
 * There is no error.
 <br>
+
+cat
+--------
+1. **no arg** <br> 
+Output/Input (Working Repository: /home)
+```
+[user@sahara ~]$ cat
+input
+input
+lecture1 
+lecture1
+```
+* Running cat with no argument resulted in a "mode" where the terminal repeatedly outputs whatever is inputted.
+* There is no error.
+2. **directory arg** <br> 
+Output/Input (Working Repository: /home)
+```
+[user@sahara ~]$ cat lecture1
+cat: lecture1: Is a directory
+```
+* Running cat with a path to a directory as an argument resulted in an error.
+* This is because you can't print out a directory since it is not a file.
+3. **file arg** <br> 
+Output/Input (Working Repository: /home/lecture1/messages)
+```
+[user@sahara ~/lecture1/messages]$ cat en-us.txt 
+Hello World!
+```
+* Running cat with a path to a file as an argument resulted in the content of that file being printed out.
+* There is no error.
