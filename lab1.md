@@ -54,7 +54,7 @@ Output/Input (Working Repository: /home/lecture1)
 [user@sahara ~/lecture1]$ ls Hello.java
 Hello.java
 ```
-* Running ls with a path to a file as an argument resulted in the name of that file being printed out.
+* Running ls with a path to a file as an argument resulted in the relative path of that file being printed out.
 * There is no error.
 <br>
 
