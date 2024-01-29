@@ -9,10 +9,8 @@ Below is my implementation of `chatServer`
 import java.io.IOException;
 import java.net.URI;
 
-
 class Handler implements URLHandler {
- String output = "";
-
+    String output = "";
     public String handleRequest(URI url) {
         if (url.getPath().contains("/add")) {
             String[] parameters = url.getQuery().split("&");
@@ -30,7 +28,9 @@ public class chatServer {
     }
 }
 ```
-![Image](images/run1.png)
-![Image](images/run2.png)
+![First Run](images/run1.png)
+
+
+![Second Run](images/run2.png)
 
 
