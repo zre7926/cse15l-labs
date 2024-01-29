@@ -4,7 +4,7 @@ Ryan Zhang
 
 Part 1
 --------
-My implementation of the chatServer class:
+Below is my implementation of `chatServer`
 ```
 import java.io.IOException;
 import java.net.URI;
@@ -30,3 +30,7 @@ public class chatServer {
     }
 }
 ```
+![Image](images/run1.png)
+![Image](images/run2.png)
+
+
