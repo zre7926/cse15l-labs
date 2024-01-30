@@ -49,7 +49,7 @@ The `handleRequest` method is called with the argument being the url as an `URI`
 Part 2
 --------
 ![Path](images/path.png)
-Referring to the image above, the absolute path to my private key is `/Users/ryanz/.ssh/id_rsa` and the absolute path to my publiv key is `/Users/ryanz/.ssh/id_rsa.pub`. <br>
+Referring to the image above, the absolute path to my private key is `/Users/ryanz/.ssh/id_rsa` and the absolute path to my public key is `/Users/ryanz/.ssh/id_rsa.pub`. <br>
 Here is a screenshot of a successful login to my account without needing a password:
 ![Login](images/login.png)
 
