@@ -1,6 +1,6 @@
 Lab Report 2 - Servers and SSH Keys (Week 3)
 ========
-Ryan Zhang 
+Ryan Zhang <br> A17852116
 
 Part 1
 --------
@@ -30,12 +30,29 @@ public class ChatServer {
 ```
 <br>
 I used `/add-message` twice:<br>
-First Run:<br>
+
+***First Run:***
+<br>
+
 ![First Run](images/run1.png)<br>
-The `handleRequest` method is called with the argument being the url as an `URI` object. Within the if statement in that method, the `getPath` method, which has no argument, gets the path of the url (`/add-message?s=I like bagels&user=Bob`) and the `contains` method determines whether the path contains the argument, which is `"/add"`. Since the path does contain `"/add"`, the code in the `if` statement runs and the `getQuery` method is ran with no arguments, which gets the part of the path inside the query (`s=I like bagels&user=Bob`). Then, the `split` method splits that into `String` elements seperated by `"&"`s, which is the argument, and stores them into an array of `String`s (`["s=I like bagels", "user=Bob"]`). Then, the output `String` is concatenated with a new `String` that is created with the `String.format` method with arguments of the format (`"%s: %s\n"`) and the parts of the two parameters that the user wants to be displayed (`"I like bagels" and "Bob"`). This changes the `output` field to `"Bob: I like bagels\n"`
+The `handleRequest` method is called with the argument being the url as an `URI` object. Within the if statement in that method, the `getPath` method, which has no argument, gets the path of the url (`/add-message?s=I like bagels&user=Bob`) and the `contains` method determines whether the path contains the argument, which is `"/add"`. Since the path does contain `"/add"`, the code in the `if` statement runs and the `getQuery` method is ran with no arguments, which gets the part of the path inside the query (`s=I like bagels&user=Bob`). Then, the `split` method splits that into `String` elements seperated by `"&"`s, which is the argument, and stores them into an array of `String`s (`["s=I like bagels", "user=Bob"]`). Then, the output `String` is concatenated with a new `String` that is created with the `String.format` method with arguments of the format (`"%s: %s\n"`) and the parts of the two parameters that the user wants to be displayed (`"I like bagels" and "Bob"`). This changes the `output` field to `"Bob: I like bagels\n"`.
 
 <br>
-Second run:<br>
-![Second Run](images/run2.png)
-The `handleRequest` method is called with the argument being the url as an `URI` object. Within the if statement in that method, the `getPath` method, which has no argument, gets the path of the url (`/add-message?s=Me too&user=Jim`) and the `contains` method determines whether the path contains the argument, which is `"/add"`. Since the path does contain `"/add"`, the code in the `if` statement runs and the `getQuery` method is ran with no arguments, which gets the part of the path inside the query (`s=Me too&user=Jim`). Then, the `split` method splits that into `String` elements seperated by `"&"`s, which is the argument, and stores them into an array of `String`s (`["s=Me too", "user=Jim"]`). Then, the output `String` is concatenated with a new `String` that is created with the `String.format` method with arguments of the format (`"%s: %s\n"`) and the parts of the two parameters that the user wants to be displayed (`"Me too" and "Jim"`). This changes the `output` field to `"Bob: I like bagels\nJim: Me too\n"`
 
+***Second run:***
+<br>
+
+![Second Run](images/run2.png)<br>
+The `handleRequest` method is called with the argument being the url as an `URI` object. Within the if statement in that method, the `getPath` method, which has no argument, gets the path of the url (`/add-message?s=Me too&user=Jim`) and the `contains` method determines whether the path contains the argument, which is `"/add"`. Since the path does contain `"/add"`, the code in the `if` statement runs and the `getQuery` method is ran with no arguments, which gets the part of the path inside the query (`s=Me too&user=Jim`). Then, the `split` method splits that into `String` elements seperated by `"&"`s, which is the argument, and stores them into an array of `String`s (`["s=Me too", "user=Jim"]`). Then, the output `String` is concatenated with a new `String` that is created with the `String.format` method with arguments of the format (`"%s: %s\n"`) and the parts of the two parameters that the user wants to be displayed (`"Me too" and "Jim"`). This changes the `output` field to `"Bob: I like bagels\nJim: Me too\n"`.
+<br><br>
+
+Part 2
+--------
+![Path](images/path.png)
+Referring to the image above, the absolute path to my private key is `/Users/ryanz/.ssh/id_rsa` and the absolute path to my publiv key is `/Users/ryanz/.ssh/id_rsa.pub`. <br>
+Here is a screenshot of a successful login to my account without needing a password:
+![Login](images/login.png)
+
+Part 3
+--------
+From the week 2 and 3 labs, I learned more in depth about urls and its various parts. I also learned how a webpage can be implemented with java and ran one by myself several times. They are able to calculate and display things based on the path that is inputted. I also learned how to do the skill demonstrations.
