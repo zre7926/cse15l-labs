@@ -4,7 +4,7 @@ Ryan Zhang
 
 Part 1
 --------
-Below is my implementation of `chatServer`
+For this program, I used two files: `Server` and `chatServer`. The implementation of `Server` is the same as the one in the [wavelet example]((https://github.com/ucsd-cse15l-f23/wavelet)). Below is my implementation of `chatServer`:
 ```
 import java.io.IOException;
 import java.net.URI;
