@@ -87,7 +87,7 @@ Therefore, by changing the code to alter and return the newly created array, the
 Part 2
 --------
 In this part, I will explore the different command-line options to use the `find`command
-1. search by name
+1) search by name
 ```
 (base) ryanz@Ryan-4 docsearch % find . -name "ar79.txt"
 ./technical/biomed/ar79.txt
@@ -102,7 +102,7 @@ This command searches the `docsearch` directory for a file or folder with the na
 This option is useful when you are looking for a file or folder with a known name through a bunch of files and folders.
 <br>
 
-2. search by name in given directory
+2) search by name in given directory
 ```
 (base) ryanz@Ryan-4 docsearch % find technical/biomed/ -name "ar79.txt"
 technical/biomed//ar79.txt
@@ -117,7 +117,7 @@ This command searches the `docsearch/technical/` directory for a file with the n
 This option is useful when you are looking for a file or folder with a known name in a specific directory.
 <br>
 
-3. search file by name and then delete
+3) search file by name and then delete
 ```
 (base) ryanz@Ryan-4 docsearch % find . -name chapter-12.txt -delete
 ```
@@ -130,7 +130,7 @@ This command searches the `docsearch` directory for a file with the name `journa
 This option is useful when you are trying to delete a file when you don't know where it is but know its name.
 <br>
 
-4. search by directory and type
+4) search by directory and type
 ```
 (base) ryanz@Ryan-4 docsearch % find ./technical/ -type d 
 ./technical/
