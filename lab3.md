@@ -166,7 +166,7 @@ This command searches the `docsearch/technical` drectory for directories and pri
 ```
 This command searches the `docsearch/technical/government.Post_Rate_Comm` drectory for files and prints their paths out.<br><br>
 This option is useful when you are trying to find a certain kind of file.
-<br>
+<br><br>
 
 Citation: https://www.linuxteck.com/find-command-in-linux-with-examples/
 
