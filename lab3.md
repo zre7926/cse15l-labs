@@ -166,6 +166,22 @@ This command searches the `docsearch/technical` drectory for directories and pri
 ```
 This command searches the `docsearch/technical/government.Post_Rate_Comm` drectory for files and prints their paths out.<br><br>
 This option is useful when you are trying to find a certain kind of file.
+<br>
+
+5) search for empty
+```
+(base) ryanz@Ryan-4 docsearch % find technical/ -empty      
+technical//biomed/1471-2121-2-12.txt
+technical//911report/preface.txt
+```
+This command searches the `docsearch/technical` drectory for directories and files that are empty and prints their paths out.
+
+```
+(base) ryanz@Ryan-4 docsearch % find technical/biomed -type f -empty
+technical/biomed/1471-2121-2-12.txt
+```
+This command searches the `docsearch/technical/biomed` directory for files that are empty and prints their paths out.<br><br>
+This option is useful when you are searching for empty directories and files.
 <br><br>
 
 Citation: https://www.linuxteck.com/find-command-in-linux-with-examples/
